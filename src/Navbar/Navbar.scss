@@ -1,0 +1,165 @@
+@import '../variables';
+
+@function  weight($weight-name){
+   @return map-get($font-weight, $weight-name );
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+ .navbar-container{
+    
+    border-radius:5rem;
+    background-color: rgba(223, 208, 208, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0  10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    top: 2rem;
+    padding: 1.25rem;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 5rem;
+   z-index: 10000;
+   @include flexCenter(row);
+    font-family: 'roboto',sans-serif;
+    
+   } 
+
+   .nav-list{
+    @include flexCenter(row);
+    gap: 3rem;
+    list-style: none;
+    
+   font-weight:weight(large);
+   
+   }
+
+   a:hover{
+      color: $primary-color;
+   }
+
+   .logo-icon{
+    object-fit: contain;
+    width: 4rem;
+    height: auto;
+    display: block;
+    
+   }
+
+   a{
+      text-decoration: none;
+      color: $accent-color;
+   }
+
+   .toggle_icon{
+display: none;
+}
+.active03{
+    display: none;
+   
+}
+.p-copyright{
+    display: none;
+}
+
+.social-icons{
+    display: none;
+}
+
+
+@media only screen and (max-width:559px){
+   
+    .nav-list{
+    column-gap: 10rem;
+   
+   }
+
+   .nav-list-1{
+    column-gap: 15rem;
+   }
+   
+   .toggle_icon{
+    display: flex;
+    
+    }
+
+    .non-toggle{
+    display: none;
+}
+
+.active{
+         background-color: #fff; 
+        top: 0;
+     border-radius: 0;
+     border-bottom: 1px solid $accent-color;
+       
+        width: 100%;
+      
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+       
+        font-size: 1.2rem;
+        font-family: 'roboto',sans-serif;
+        
+      }
+
+       .active01{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        justify-content: flex-start;
+        align-items: center;
+       left: 0;
+       top: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        animation: slideIn 0.3s ease-in-out ;
+        z-index: 1000;
+       
+        
+      }
+        @keyframes slideIn {
+            from{
+                transform: translateY(-100%);
+            }
+            to{
+                transform: translateY(0);
+            }
+      }
+
+        .active02{
+        display: flex;
+        flex-direction: column;
+        margin-top: 8rem;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        gap: 2rem;
+        font-size: 1.5rem;
+        color: $accent-color;
+        z-index: 1000;
+        font-family: 'roboto',sans-serif;
+     
+       
+      }
+       .p-copyright-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:$primary-color;
+        font-size: 0.8rem;
+        white-space: nowrap;
+        font-family: 'roboto',sans-serif;
+        margin-top: 2rem;
+    }
+
+   .social-icon01{
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+  
+   }
+
+}

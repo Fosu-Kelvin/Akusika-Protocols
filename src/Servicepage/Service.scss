@@ -1,0 +1,227 @@
+@import "../variables";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.service_container {
+  margin-top: 0rem;
+  margin: 0 auto;
+}
+
+.service_container-box1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.service-img {
+  width: 100%;
+  max-width: 70rem;
+  max-height: 20rem;
+  height: auto;
+}
+
+.service_container-box1 h1 {
+  @include headerstyle;
+}
+
+.service_container-box1 p {
+  width: 70%;
+  font-family: "roboto", sans-serif;
+}
+
+.service_container-box2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.service_container-box2 h1 {
+  font-family: "Super Festival";
+  margin-top: 3rem;
+  color: $accent-color;
+  text-align: center;
+}
+
+.box02 {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 4rem;
+}
+
+.box02 > img {
+  max-height: 16rem;
+  height: 100%;
+  width: 100%;
+  max-width: 20rem;
+
+  object-fit: cover;
+}
+
+.service_container-box2 .box02 {
+  max-height: 16rem;
+  height: 100%;
+  width: 100%;
+  min-width: 6rem;
+
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.box02-2 {
+  display: grid;
+  margin-top: 1rem;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 2rem;
+
+  flex-direction: row;
+  align-items: center;
+  gap: 8rem;
+  justify-content: center;
+}
+
+.box02-2 h2 {
+  @include headerstyle;
+  font-size: 2.5rem;
+}
+
+.box02-2 ol {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  list-style: disc;
+  gap: 1rem;
+}
+
+.service_container-box3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.service_container-box3 > h1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: $accent-color;
+  font-family: "roboto", sans-serif;
+}
+
+.box3-div-container {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  column-gap: 6rem;
+}
+
+.box3-div-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.box3-div-container h3,
+h4 {
+  font-family: "roboto", sans-serif;
+}
+
+.box3-div-container p {
+  margin-top: 1rem;
+  font-family: "roboto", sans-serif;
+}
+
+.service_container-box4 {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.service_container-box4 h1 {
+  @include headerstyle;
+  width: 60%;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.service_container-box4 p {
+  width: 60%;
+  font-family: "roboto", sans-serif;
+  margin-top: 0.8rem;
+}
+
+.service_container-box4 button {
+  display: block;
+  margin-top: 2rem;
+  padding: 0.8rem 2rem;
+  background-color: #000;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.service_container-box4 button:hover {
+  @include buttonhover;
+}
+
+@media only screen and (max-width: 559px) {
+  .box02 {
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+
+    gap: 1rem;
+  }
+
+  .box02 > img {
+    max-height: 10rem;
+    height: 100%;
+    width: 100%;
+    max-width: 8rem;
+   
+  }
+
+  .box02-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .box3-div-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .box3-div-container div{
+    margin-bottom: 1rem;
+    background-color:  hsl(60, 56%, 80%);
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 90%;
+  }
+
+  .service_container-box4 h1{
+font-size: 2rem;
+width: 100%;
+  }
+
+  .service_container-box4 p{
+    width: 100%;
+  }
+}

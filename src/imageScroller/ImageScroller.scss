@@ -1,0 +1,76 @@
+@import "../_variables";
+
+.image-scroller {
+  display: grid;
+  grid-template-columns: repeat(5, 2fr);
+  gap: 1rem;
+
+  padding: 10px;
+
+  margin-top: 5rem;
+}
+
+.image-scroller img {
+  max-height: 16rem;
+  height: 100%;
+  width: 100%;
+  min-width: 6rem;
+  box-shadow: 2px 2px 3px 2px rgb(58, 54, 54);
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 0px;
+  transition: transform 450ms;
+}
+
+.image-scroller img:hover {
+  transform: scale(1.08);
+  opacity: 1;
+}
+
+
+.img-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+} 
+
+
+
+@media only screen and (max-width: 559px) {
+
+.image-scroller {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  width: 100vw;
+  overflow-x:scroll;
+}
+
+
+.image-scroller img {
+  flex: 0 0 100vw;
+  height: auto;
+  width: 100vw; // Ensures image fills screen width
+ 
+  
+
+}
+
+  .img-box h4 {
+    font-size: 0.8rem;
+  }
+
+  .img-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+} 
+
+
+
+}
+

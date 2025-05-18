@@ -1,0 +1,64 @@
+.about-container {
+  display: flex;
+
+  flex-direction: column;
+
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 10rem;
+}
+
+.about-container p {
+  font-family: "roboto", sans-serif;
+}
+
+.box01 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.box01 h1 {
+  font-family: "Super Festival", sans-serif;
+text-align: center;
+  font-size: 3rem;
+
+  color: hsl(51, 100%, 30%);
+}
+
+.box01 img {
+  max-height: 16rem;
+  height: 100%;
+  width: 100%;
+  min-width: 10rem;
+
+  object-fit: cover;
+}
+
+.box01-container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+@media only screen and (max-width: 559px) {
+  .box01-container1 > h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .box01-container1 >p{
+    width: 100%;
+  }
+
+  .box01 p{
+    background-color: hsl(60, 56%, 80%);
+    padding: 2rem;
+    border-radius: 30px;
+    font-size: 0.8rem;
+  }
+}

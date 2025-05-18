@@ -1,0 +1,46 @@
+$primary-color:#000;
+$text-color:#fff;
+$accent-color:hsl(0, 0%, 30%);
+$font-weight:(
+    "regular":400,
+    "medium":700,
+    "large" : 900
+);
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@mixin flexCenter($direction){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin customiseButton{
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.2vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top: 0.5rem;
+  background-color: #000;
+    padding-bottom: 0.5rem;
+}
+
+@mixin buttonhover{
+     color: #ffffff;
+    background-color:rgb(153, 130, 0) ;
+    transition: all 0.5s;
+}
+
+
+@mixin headerstyle{
+    color:rgb(153, 130, 0) ;
+    font-size: 3rem;
+    margin-top: 2rem;
+    font-family: 'Super Festival',sans-serif;
+}
