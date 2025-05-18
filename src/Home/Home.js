@@ -110,7 +110,7 @@ const Home = () => {
       <section className="home-content4">
         <div className='home-content4-box1' >
           <h3>Event Gallery</h3>
-         <Link to={'/contact'}> <button>Book a Consultaion</button></Link>
+         <Link to={'/contact'}> <button>Book a Consultation</button></Link>
         </div>
         
         <ImageScroller/>
