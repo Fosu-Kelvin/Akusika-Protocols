@@ -20,10 +20,14 @@ const Navbar = () => {
      
         <ol className={`nav-list ${toggleIcon ? "nav-list-1" : ""}`}>
           <li>
-            <a href="/">
+            <Link to="/" onClick={() => setToggleIcon(false)}>
+  <img className="logo-icon" src={logo} alt="akusika protocol" />
+</Link>
+
+           {/*  <a href="/">
               
               <img className="logo-icon" src={logo} alt="akusika protocol" />
-            </a>
+            </a> */}
           </li>
           <li className='non-toggle'>
             <Link to={"/about"}>About</Link>
@@ -41,11 +45,17 @@ const Navbar = () => {
         </ol>
     
     </header>
-     <ul className={ `active03 ${toggleIcon ? "active02":""}`}>
+    <ul className={`active03 ${toggleIcon ? "active02" : ""}`}>
+  <li><Link to="/about" onClick={handleToggleIcon}>About</Link></li>
+  <li><Link to="/service" onClick={handleToggleIcon}>Service</Link></li>
+  <li><Link to="/contact" onClick={handleToggleIcon}>Contact</Link></li>
+</ul>
+
+    {/*  <ul className={ `active03 ${toggleIcon ? "active02":""}`}>
     <li><a href="/about">About</a></li>
     <li><a href="/service">Service</a></li>
     <li><a href="/contact">Contact</a></li>
-  </ul>
+  </ul> */}
   <div className={`social-icons ${toggleIcon ? "social-icon01":""}`}>
     
     <FaInstagram size={24}/>
