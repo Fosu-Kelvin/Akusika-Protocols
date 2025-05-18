@@ -38,7 +38,7 @@ const Home = () => {
        
         <h1 className="banner_description">"We value attention to detail,exceptional service and cultural sensitivity"</h1>
         <div className='banner_buttons'>
-          <button className='banner_button'>Get in touch</button>
+          <Link to={'/contact'}><button className='banner_button'>Get in touch</button></Link>
           </div>
       </div>
       
