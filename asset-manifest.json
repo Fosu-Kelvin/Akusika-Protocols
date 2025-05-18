@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Akusika-Protocols/static/css/main.3027a670.css",
-    "main.js": "/Akusika-Protocols/static/js/main.29b0eed1.js",
+    "main.js": "/Akusika-Protocols/static/js/main.66f2d781.js",
     "static/media/img03.png": "/Akusika-Protocols/static/media/img03.739f4b06c83b077e6d14.png",
     "static/media/LOGO1.png": "/Akusika-Protocols/static/media/LOGO1.fa9ad23fa3c5a095cfd3.png",
     "static/media/service01.png": "/Akusika-Protocols/static/media/service01.b25522df2c94be30c376.png",
@@ -23,10 +23,10 @@
     "static/media/IMG_3527.jpg": "/Akusika-Protocols/static/media/IMG_3527.ca05d03eff9e8ce5ab1b.jpg",
     "index.html": "/Akusika-Protocols/index.html",
     "main.3027a670.css.map": "/Akusika-Protocols/static/css/main.3027a670.css.map",
-    "main.29b0eed1.js.map": "/Akusika-Protocols/static/js/main.29b0eed1.js.map"
+    "main.66f2d781.js.map": "/Akusika-Protocols/static/js/main.66f2d781.js.map"
   },
   "entrypoints": [
     "static/css/main.3027a670.css",
-    "static/js/main.29b0eed1.js"
+    "static/js/main.66f2d781.js"
   ]
 }
