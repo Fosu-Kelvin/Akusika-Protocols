@@ -31,7 +31,7 @@ const date = today.getFullYear()
      </div>
      <div className='social-footer'>
       <h4>Social Media</h4>
-      <p><a href="">Instagram</a></p>
+      <p><a href="https://www.instagram.com/akusikaprotocols/">Instagram</a></p>
      </div>
      <div className='footer-box04'>
       <h4>Address</h4>

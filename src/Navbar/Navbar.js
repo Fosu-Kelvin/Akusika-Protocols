@@ -24,10 +24,7 @@ const Navbar = () => {
   <img className="logo-icon" src={logo} alt="akusika protocol" />
 </Link>
 
-           {/*  <a href="/">
-              
-              <img className="logo-icon" src={logo} alt="akusika protocol" />
-            </a> */}
+          
           </li>
           <li className='non-toggle'>
             <Link to={"/about"}>About</Link>
@@ -51,14 +48,10 @@ const Navbar = () => {
   <li><Link to="/contact" onClick={handleToggleIcon}>Contact</Link></li>
 </ul>
 
-    {/*  <ul className={ `active03 ${toggleIcon ? "active02":""}`}>
-    <li><a href="/about">About</a></li>
-    <li><a href="/service">Service</a></li>
-    <li><a href="/contact">Contact</a></li>
-  </ul> */}
+    
   <div className={`social-icons ${toggleIcon ? "social-icon01":""}`}>
     
-    <FaInstagram size={24}/>
+    <a style={{all:"unset"}} href="https://www.instagram.com/akusikaprotocols/"><FaInstagram size={24}/></a>
     <FaTwitter size={24}/>
     <FaFacebook size={24}/>
     <FaTiktok size={24}/>
